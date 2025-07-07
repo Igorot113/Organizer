@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OrganizadorDeEstudos</string>
+    <string name="SplashTitle">Organizer</string>
+    <string name="BtnAdd">+</string>
+    <string name="EditarTitulo">Editar Materia</string>
+    <string name="btnSalvar">Salvar</string>
+    <string name="Name">Nome</string>
+    <string name="Descricao">Descrição</string>
+    <string name="AddTitulo">Adicionar Materia</string>
+    <string name="btnConfirm">Confirmar</string>
+    <string name="btnVer">Ver Detalhes</string>
+</resources>
