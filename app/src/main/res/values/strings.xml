@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Organizer</string>
+    <string name="SplashTitle">Organizer</string>
+    <string name="BtnAdd">+</string>
+    <string name="EditarTitulo">Editar Materia</string>
+    <string name="btnSalvar">Salvar</string>
+    <string name="Name">Nome</string>
+    <string name="Descricao">Descrição</string>
+    <string name="AddTitulo">Adicionar Materia</string>
+    <string name="btnConfirm">Confirmar</string>
+    <string name="btnVer">Ver Detalhes</string>
+    <string name="LoginEmail">Email</string>
+    <string name="LoginSenha">Senha</string>
+    <string name="TextoLogin">Login</string>
+    <string name="btnLogar">Logar</string>
+    <string name="btnCadastrar">Cadastrar</string>
+</resources>
