@@ -14,4 +14,5 @@
     <string name="TextoLogin">Login</string>
     <string name="btnLogar">Logar</string>
     <string name="btnCadastrar">Cadastrar</string>
+    <string name="sair">Sair</string>
 </resources>

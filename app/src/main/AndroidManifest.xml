@@ -27,12 +27,11 @@
             android:name=".View.AddItemActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".View.DetalhesActivity">
-        </activity>
-        <activity android:name=".View.MainActivity">
-        </activity>
-        <activity android:name=".View.EditarItemActivity">
-        </activity>
+        <activity android:name=".View.DetalhesActivity"></activity>
+        <activity android:name=".View.MainActivity"></activity>
+        <activity android:name=".View.EditarItemActivity"></activity>
+        <activity android:name=".View.LoginActivity"></activity>
+        <activity android:name=".View.CadastroActivity"></activity>
     </application>
 
 </manifest>

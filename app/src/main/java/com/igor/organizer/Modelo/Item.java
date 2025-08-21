@@ -1,12 +1,25 @@
 package com.igor.organizer.Modelo;
 
 public class Item {
+    private long id;
     private String texto;
     private String descricao;
     public Item(){}
     public Item(String texto, String descricao) {
         this.texto = texto;
         this.descricao = descricao;
+    }
+    public Item(long id,String texto,String descricao){
+        this.id = id;
+        this.texto = texto;
+        this.descricao = descricao;
+    }
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
     public String getTexto() {
         return texto;

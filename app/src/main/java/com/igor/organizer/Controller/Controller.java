@@ -12,26 +12,29 @@ public class Controller {
     private final ItemDAO dao;
     private final Adapter adapter;
     private final List<Item> list;
-    public Controller(Context context){
+    private final long userId;
+    public Controller(Context context,long userId){
+        this.userId = userId;
         dao = new ItemDAO(context);
-        list = dao.listar();
+        list = dao.listarPorUsuario(userId);
         adapter = new Adapter(context, list);
     }
     public void Add(Item item){
-        dao.inserir(item);
-        list.clear();
-        list.addAll(dao.listar());
+        long idGerado = dao.inserir(item, userId);
+        item.setId(idGerado);
+        list.add(0, item);
+        //adapter.notifyItemInserted(0);
         adapter.notifyDataSetChanged();
     }
     public void remove(Item item,int position){
         dao.remover(item);
         list.remove(position);
         adapter.notifyItemRemoved(position);
-        adapter.notifyItemChanged(position, list.size() - position);
+        //adapter.notifyItemChanged(position, list.size() - position);
     }
     public void update(int position,Item novoitem){
-        Item antigo = list.get(position);
-        dao.atualizar(antigo,novoitem);
+        //Item antigo = list.get(position);
+        dao.atualizar(novoitem);
         list.set(position,novoitem);
         adapter.notifyItemChanged(position);
     }
